@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  monolithic:
+    build: ./monolithic
+    depends_on:
+      - mongo
+  student:
+    build: ./microservices/student-service
+    depends_on:
+      - mongo
+  task:
+    build: ./microservices/task-service
+    depends_on:
+      - mongo
+  teacher:
+    build: ./microservices/teacher-service
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - monolithic
+      - student
+      - task
+      - teacher
+  

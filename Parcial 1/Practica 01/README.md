@@ -16,7 +16,6 @@ docker-compose -p newborn-app up --build -d
 ## Evidencias
 
 1. Dockerfile del backend
-
    ![Dockerfile backend](./evidencias/1.png)
 
 1. Dockerfile del frontend

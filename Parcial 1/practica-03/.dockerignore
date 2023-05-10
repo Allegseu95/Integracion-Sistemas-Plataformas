@@ -1,0 +1,11 @@
+node_modules/
+
+captures/
+
+.dockerignore
+
+Dockerfile
+
+Dockerfile.test
+
+README.md

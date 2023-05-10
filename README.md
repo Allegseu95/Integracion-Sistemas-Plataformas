@@ -10,4 +10,6 @@
 ## Estructura de carpetas del Repositorio
 
 - **Parcial 1**
-  1. Trabajo Practico 01
+  1. Practica 01
+  1. Practica 02
+  1. practica-03

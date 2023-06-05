@@ -13,3 +13,6 @@
   1. Practica 01
   1. Practica 02
   1. practica-03
+- **Parcial 2**
+  1. Practica 01
+  1. Practica 02

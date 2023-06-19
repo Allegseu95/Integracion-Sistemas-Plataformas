@@ -1,0 +1,35 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Father {
+  id: Int!
+  nombre: String!
+  tipoDeSangre: String!
+  observaciones: String!
+}
+
+type Query {
+  todos: [Father!]!
+  id(id: Int!): Father!
+}
+
+type Mutation {
+  createFather(createFatherInput: CreateFatherInput!): Father!
+  demo(demo: CreateFatherInput!): Father!
+  updateFather(updateFatherInput: UpdateFatherInput!): Father!
+  removeFather(id: Int!): Father!
+}
+
+input CreateFatherInput {
+  nombre: String!
+  tipoDeSangre: String!
+  observaciones: String!
+}
+
+input UpdateFatherInput {
+  nombre: String
+  tipoDeSangre: String
+  observaciones: String
+  id: Int!
+}
